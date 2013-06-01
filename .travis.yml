@@ -1,1 +1,9 @@
-script: grunt test --verbose --force
+language: node_js
+
+node_js:
+  - 0.10.8
+
+before_script:
+  - npm install --global grunt-cli
+
+#script: grunt test --verbose --force#
