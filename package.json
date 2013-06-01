@@ -1,0 +1,25 @@
+{
+    "name": "backbone.memoize",
+    "title": "Backbone.Memoize",
+    "version": "0.0.1",
+
+    "homepage": "https://github.com/gsmaverick/Backbone.Memoize",
+    "bugs": {
+        "url": "https://github.com/gsmaverick/Backbone.Memoize/issues"
+    },
+    "license": "MIT",
+
+    "dependencies": {
+        "backbone": "~1.0.0",
+        "underscore": "~1.4.4"
+    },
+
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-jshint": "~0.5.4",
+        "grunt-contrib-qunit": "~0.2.1",
+        "grunt-contrib-uglify": "~0.2.1"
+    },
+
+}
