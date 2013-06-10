@@ -1,11 +1,22 @@
+var expandLibPath = function(lib){
+    return ['lib/', '/', '.js'].join(lib);
+};
+
 module.exports = function(grunt) {
-    // Project configuration.
     grunt.initConfig({
         jasmine: {
-            files: ['test/index.html']
+            src: 'backbone.memoize.js',
+
+            options: {
+                specs: 'test/*Spec.js',
+                helpers: 'test/*Helper.js',
+                vendor: ['jquery', 'underscore', 'backbone'].map(expandLibPath)
+            }
         }
     });
 
-    // Task to run tests
-    grunt.registerTask('test', 'jasmine');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
+
+    grunt.registerTask('test', ['jasmine']);
+    grunt.registerTask('default', ['test']);
 };
