@@ -1,6 +1,4 @@
-var expandLibPath = function(lib){
-    return ['lib/', '/', '.js'].join(lib);
-};
+'use strict';
 
 module.exports = function(grunt) {
     grunt.initConfig({
@@ -19,4 +17,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', ['jasmine']);
     grunt.registerTask('default', ['test']);
+};
+
+var expandLibPath = function(lib){
+    return ['lib/', '/', '.js'].join(lib);
 };

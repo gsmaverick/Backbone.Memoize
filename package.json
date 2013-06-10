@@ -6,6 +6,13 @@
   "bugs": {
     "url": "https://github.com/gsmaverick/Backbone.Memoize/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsmaverick/Backbone.Memoize.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
   "license": "MIT",
   "dependencies": {
     "backbone": "~1.0.0",
