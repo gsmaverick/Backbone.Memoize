@@ -5,5 +5,3 @@ node_js:
 
 before_script:
   - npm install --global grunt-cli
-
-#script: grunt test --verbose --force#

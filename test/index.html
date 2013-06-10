@@ -5,9 +5,11 @@
 
         <title>Backbone.Memoize Test Suite</title>
 
-        <!-- QUnit -->
-        <link rel="stylesheet" href="../lib/qunit/qunit.css">
-        <script src="../lib/qunit/qunit.js"></script>
+        <link rel="stylesheet" type="text/css" href="../lib/jasmine/jasmine.css">
+
+        <!-- Jasmine -->
+        <script src="../lib/jasmine/jasmine.js"></script>
+        <script src="../lib/jasmine/jasmine-html.js"></script>
 
         <!-- Libraries -->
         <script src="../lib/jquery/jquery.js"></script>
@@ -18,10 +20,16 @@
         <script src="../backbone.memoize.js"></script>
 
         <!-- Tests -->
-        <script src="backbone.memoize.js"></script>
+        <script src="MemoizeSpec.js"></script>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+                jasmine.getEnv().execute();
+            };
+      </script>
     </head>
 
     <body>
-        <section id="qunit"></section>
     </body>
 </html>

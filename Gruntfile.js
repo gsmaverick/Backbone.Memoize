@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
-        qunit: {
+        jasmine: {
             files: ['test/index.html']
         }
     });
 
     // Task to run tests
-    grunt.registerTask('test', 'qunit');
+    grunt.registerTask('test', 'jasmine');
 };
