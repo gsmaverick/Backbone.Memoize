@@ -42,17 +42,17 @@
 
             var evtString = 'change';
 
-            if (eventSplitter.test(props)){
+            if (props && eventSplitter.test(props)){
                 var props = props.split(eventSplitter);
 
                 evtString = 'change:' + props.join(' change:');
             }
 
             this.on(evtString, function(){
-                this._memoized[fn].fresh = false;
+                self._memoized[fn].fresh = false;
             }, this);
 
-            var func = this[fn];
+            var func = self[fn];
 
             return function(){
                 var cache = self._memoized[fn];
