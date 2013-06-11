@@ -7,7 +7,6 @@ module.exports = function(grunt) {
 
             options: {
                 specs: 'test/*Spec.js',
-                helpers: 'test/*Helper.js',
                 vendor: ['jquery', 'underscore', 'backbone'].map(expandLibPath)
             }
         }
